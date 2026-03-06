@@ -72,7 +72,7 @@ Automation platform managing onboarding and offboarding across enterprise system
 ## 🧠 Tech Stack
 
 ### Languages
-Python • SQL
+Python • SQL • Javascript
 
 ### Infrastructure & DevOps
 Docker • Docker Compose • Linux • Systemd • Git • GitHub
