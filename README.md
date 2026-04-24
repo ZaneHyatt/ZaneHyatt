@@ -1,125 +1,94 @@
 # Zane Hyatt
 
-**Automation & DevOps Engineer**  
-Building production-ready internal platforms and workflow automation systems.
+Currently a Customer Support Developer at Airbyte.  
+I spend most of my time working with APIs, debugging data pipelines, and building connectors — and outside of that, I like writing code that automates things or makes systems easier to reason about.
 
-I specialize in turning messy operational processes into reliable, deterministic systems using Python, PostgreSQL, and containerized infrastructure. My work focuses on automation, observability, and scalable internal tooling that helps organizations run more efficiently.
-
-📍 Los Angeles, CA → Open to Remote Roles  
-🔗 LinkedIn: https://www.linkedin.com/in/zane-hyatt-5558311b0/  
-📫 Email: zanehyatt@gmail.com
-
----
-
-## 🚀 What I Work On
-
-- Workflow Automation
-- Internal Tools & Platforms
-- API Integrations
-- Operational Analytics
-- DevOps Infrastructure
-- Data Collection Pipelines
-- Process Reliability & Observability
+I’m generally interested in:
+- automation
+- infrastructure
+- data movement
+- making unreliable systems behave predictably
 
 ---
 
-## ⭐ Featured Projects
+## What I Like Building
 
-### 🧩 IT Analytics Platform (Flagship System)
-Production-grade internal analytics ecosystem that centralizes operational telemetry across enterprise systems.
-
-**Highlights**
-- PostgreSQL schema-isolated architecture
-- Role-based writer/reader database access model
-- Python data collectors integrating external APIs
-- FastAPI dashboard for operational visibility
-- Containerized multi-service deployment with Docker
-- Structured migrations with Alembic
-- Automated backups and restore workflows
-
-**Stack:** Python • PostgreSQL • FastAPI • Docker • Alembic • Linux
+- Small tools that remove manual work
+- Scripts that turn messy data into something usable
+- API integrations (especially the annoying ones)
+- Systems that can run without being babysat
+- Things that log enough information to actually debug later
 
 ---
 
-### 📊 IT Health Dashboard
-Centralized monitoring interface aggregating system health and service telemetry.
+## A Recent Example
 
-**Highlights**
-- Single-pane operational visibility
-- Rolling and daily health reporting
-- Structured metrics pipeline
-- Observability-focused design
-- Analytics-ready data modeling
+I wrote a crawler for unstable APIs that don’t behave nicely with pagination.
 
-**Stack:** Python • FastAPI • PostgreSQL • Docker
+Instead of assuming the API is reliable, it:
+- detects whether cursor-based pagination actually works
+- falls back to offset pagination when needed
+- does a second “healing pass” if records might have been missed
+- prioritizes **at-least-once delivery over perfect efficiency**
 
----
-
-### 🔄 Employee Lifecycle Automation Engine
-Automation platform managing onboarding and offboarding across enterprise systems.
-
-**Highlights**
-- Google Admin SDK integration
-- Automated provisioning workflows
-- Multi-system account lifecycle management
-- Reduced manual operational workload
-- Error-resistant configuration flows
-
-**Stack:** Python • Google Workspace Admin SDK • REST APIs
+The core idea is simple: don’t trust the API, design around its failure modes.
 
 ---
 
-## 🧠 Tech Stack
+## Projects
 
-### Languages
-Python • SQL • Javascript
+### IT Analytics Platform
+Internal system for collecting and organizing operational data across different services.
 
-### Infrastructure & DevOps
-Docker • Docker Compose • Linux • Systemd • Git • GitHub
-
-### Databases
-PostgreSQL • Alembic Migrations • Schema Design • Role-Based Access
-
-### Backend & APIs
-FastAPI • SQLAlchemy Core • REST Integrations
-
-### Automation & Integrations
-Google Workspace Admin SDK • Meraki API • ECRS API • Workflow Systems
-
-### Security
-CompTIA Security+ • IAM • Role-Based Access Control
-
-### Cloud
-AWS (Cloud Practitioner – In Progress) • Azure VM Deployment
+- API data collectors (Python)
+- PostgreSQL for structured storage
+- FastAPI for visibility
+- Dockerized services
+- Focus on observability and reliability
 
 ---
 
-## 📜 Certifications
+### IT Health Dashboard
+A simple interface for understanding system state across multiple services.
 
-- CompTIA Security+ (SY0-701)
-- Google Cybersecurity Professional Certificate
-- 100 Days of Code – Python Pro Bootcamp
-- AWS Cloud Practitioner (In Progress)
-
----
-
-## 📈 Currently Focused On
-
-- Cloud infrastructure architecture
-- Scalable automation platform design
-- Reliability engineering practices
-- Production-grade system design
+- Aggregated metrics
+- Daily + rolling reporting
+- Built for quick debugging, not just visuals
 
 ---
 
-## 🤝 Let’s Connect
+### Employee Lifecycle Automation
+Handles onboarding/offboarding across multiple systems.
 
-I’m actively seeking remote roles in:
+- Google Workspace + API integrations
+- Reduced repetitive admin work
+- Designed to fail safely instead of silently
 
-- Automation Engineering  
-- DevOps Engineering  
-- Platform Engineering  
-- Infrastructure Engineering  
-- Internal Tools Engineering  
+---
 
-If you're building systems that value automation, reliability, and clean architecture — let’s talk.
+## Stack I Use Often
+
+- Python
+- PostgreSQL / SQL
+- Docker
+- Linux
+
+And a lot of:
+- REST APIs
+- JSON
+- logs
+
+---
+
+## Current Focus
+
+- Better ways to debug data pipelines
+- Connector development and API edge cases
+- Making systems more observable
+- Building tools I actually want to use
+
+---
+
+## Outside of Work
+
+I still code for fun — usually small scripts, experiments, or trying to understand how something breaks.
